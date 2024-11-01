@@ -1,0 +1,58 @@
+/* body {
+} */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header,
+nav {
+  background-color: #ffc017;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav img {
+  width: 120px;
+  margin: 1rem;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+ul li {
+  margin: 1rem 0.5rem;
+}
+
+ul li:nth-child(1),
+ul li:nth-child(2),
+ul li:nth-child(3) {
+  display: none;
+}
+
+.btn {
+  background-color: #191919;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 30px;
+}
+
+#header-m {
+  display: none;
+}
+
+ol li::before {
+  counter-increment: li;
+  content: counter(item, decimal-leading-zero);
+}
+
+.article-img {
+  width: 100px;
+}
