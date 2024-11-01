@@ -1,5 +1,6 @@
-/* body {
-} */
+body {
+  font-family: 'Specter', Arial, Helvetica, sans-serif;
+}
 
 a {
   text-decoration: none;
@@ -12,9 +13,14 @@ nav {
   border-bottom: 1px solid black;
 }
 
+header {
+  margin-bottom: 1rem;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  font-size: 0.8rem;
 }
 
 nav img {
@@ -25,6 +31,7 @@ nav img {
 ul {
   display: flex;
   list-style-type: none;
+  align-items: center;
 }
 
 ul li {
@@ -40,19 +47,194 @@ ul li:nth-child(3) {
 .btn {
   background-color: #191919;
   color: white;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border-radius: 30px;
+}
+
+#title p {
+  padding: 0 3rem 0 1rem;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  padding: 4rem 1rem 2rem;
+}
+
+#title .btn {
+  padding: 0.5rem 2rem;
+  margin: 2rem 1rem 3rem;
+  display: inline-block;
+}
+
+#title .btn a {
+  color: white;
 }
 
 #header-m {
   display: none;
 }
 
-ol li::before {
-  counter-increment: li;
-  content: counter(item, decimal-leading-zero);
+#trending-icon {
+  display: inline;
+  margin: 0 0.5rem 0 1rem;
+  width: 25px;
+}
+
+h4 {
+  display: inline;
+  vertical-align: super;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+ol li {
+  display: flex;
+  margin-bottom: 1.5rem;
+  padding-right: 1rem;
+}
+
+.ol-number {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e6e7e7;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 20px;
+  margin-right: 0.2rem;
+}
+
+h6 {
+  font-size: 0.7rem;
+  display: inline;
+  vertical-align: super;
+  font-weight: 600;
+}
+
+.author span {
+  color: #a49a97;
+}
+
+h3 {
+  padding: 0.3rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  color: #a49a97;
+  font-size: 0.7rem;
+}
+
+hr {
+  border-top: 1px solid #f0f1f1;
+  margin: 2rem 0;
+}
+
+#smaller-hr {
+  margin: 1rem;
+}
+
+#discover h4 {
+  font-weight: 800;
+  padding: 1rem;
+}
+
+.button {
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  color: #a49a97;
+  padding: 0.5rem 1rem;
+}
+
+#discover div {
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+#discover div:last-of-type {
+  padding: 0;
+}
+
+#discover p {
+  padding: 0.5rem 1rem;
+}
+
+#discover a {
+  color: #a49a97;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  height: 100px;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  flex-grow: 1;
+}
+
+.article-text p:first-of-type {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2; /*Senza questa riga di codice dava un errore - Also define the standard property 'line-clamp' for compatibility*/
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #a49a97;
+  font-size: 0.8rem;
+}
+
+.article-text div:last-of-type {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #a49a97;
+}
+
+.article-text div:last-of-type p {
+  font-size: 0.6rem;
+}
+
+.article-text div:last-of-type a {
+  color: #a49a97;
+}
+
+.oval {
+  color: #a49a97;
+  background-color: #f1f2f2;
+  border-radius: 14px;
+  padding: 0.1rem;
+  max-width: 70px;
+}
+
+.bookmark {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20px;
 }
 
 .article-img {
-  width: 100px;
+  height: 80%;
+  max-width: 39%;
+  padding-left: 1rem;
 }
