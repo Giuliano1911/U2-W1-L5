@@ -38,7 +38,7 @@
   }
 
   g[stroke-linecap='butt'] {
-    transition: opacity 0.1s ease;
+    transition: opacity 0 linear;
   }
 
   .opacity {

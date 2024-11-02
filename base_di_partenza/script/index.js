@@ -22,11 +22,7 @@ const allM = document.querySelectorAll('[stroke-linecap="butt"]')
 const MAnimation = function () {
   const random = Math.floor(Math.random() * allM.length)
   const randomM = allM[random]
-  if (randomM.classList.contains('opacity')) {
-    randomM.classList.remove('opacity')
-  } else {
-    randomM.classList.add('opacity')
-  }
+  randomM.classList.toggle('opacity')
 }
 
 //Dall'array contente tutte le M estraggo una M casuale ed aggiungo o tolgo l'opacità tramite i CSS
