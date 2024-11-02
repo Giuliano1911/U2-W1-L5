@@ -1,0 +1,185 @@
+@media screen and (min-width: 576px) {
+  nav img {
+    margin: 1rem 0 1rem 2rem;
+  }
+
+  nav ul {
+    margin-right: 2rem;
+  }
+
+  ul li:nth-child(1),
+  ul li:nth-child(2),
+  ul li:nth-child(3) {
+    display: block;
+  }
+
+  #header-m {
+    display: block;
+    overflow: hidden;
+  }
+
+  #title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #title div:first-of-type {
+    width: 80%;
+    padding-left: 1rem;
+  }
+
+  #title div:last-of-type {
+    display: block;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+  }
+
+  g[stroke-linecap='butt'] {
+    transition: opacity 0.1s ease;
+  }
+
+  .opacity {
+    opacity: 0;
+  }
+
+  #trending {
+    padding: 0 1rem;
+  }
+
+  #trending-title {
+    margin: 1rem 0;
+  }
+
+  ol li {
+    width: 40%;
+    flex-grow: 1;
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #discover {
+    padding: 0 1rem;
+  }
+
+  #articles {
+    padding: 0 1rem;
+  }
+
+  .article {
+    height: 150px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  .article-text p:first-of-type {
+    font-size: 1rem;
+    line-height: 22px;
+  }
+
+  .article-text div:last-of-type p {
+    font-size: 0.8rem;
+  }
+
+  .oval {
+    max-width: none;
+  }
+
+  .bookmark {
+    bottom: -55px;
+  }
+
+  .article img {
+    height: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*Non mi piacevano gli articoli troppo grandi, quindi li ho dimensionati e centrati*/
+  #articles {
+    width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav img {
+    margin-right: 480px;
+  }
+
+  #title {
+    justify-content: flex-end;
+  }
+
+  #title div:first-of-type {
+    width: 1000px;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  #title div:last-of-type {
+    position: absolute;
+    right: 0;
+    left: initial;
+    overflow: hidden;
+  }
+
+  #trending {
+    width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  ol li {
+    width: 24%;
+    flex-grow: 1;
+  }
+
+  .date {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .date p {
+    padding-right: 0.2rem;
+  }
+
+  .date .star {
+    display: block;
+  }
+
+  #flex-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  #discover {
+    width: 350px;
+    padding-top: 1rem;
+  }
+
+  #articles {
+    margin: 0;
+    padding: 0;
+    width: 600px;
+  }
+}

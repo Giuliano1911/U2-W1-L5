@@ -7,7 +7,11 @@ a {
   color: black;
 }
 
-header,
+a:hover {
+  text-decoration: underline;
+}
+
+#title,
 nav {
   background-color: #ffc017;
   border-bottom: 1px solid black;
@@ -21,6 +25,30 @@ nav {
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.yellow-nav {
+  background-color: #ffc017;
+}
+
+.btn:hover {
+  background-color: rgb(98, 98, 98);
+}
+
+.white-nav {
+  background-color: white;
+}
+
+.white-nav .btn {
+  background-color: #1a8917;
+}
+
+.white-nav .btn:hover {
+  background-color: #135d10;
 }
 
 nav img {
@@ -51,6 +79,15 @@ ul li:nth-child(3) {
   border-radius: 30px;
 }
 
+.btn:active {
+  position: relative;
+  top: 3px;
+}
+
+#title {
+  padding-top: 50px;
+}
+
 #title p {
   padding: 0 3rem 0 1rem;
   font-size: 1.2rem;
@@ -71,6 +108,10 @@ h1 {
   color: white;
 }
 
+#title div:last-of-type {
+  display: none;
+}
+
 #header-m {
   display: none;
 }
@@ -81,11 +122,16 @@ h1 {
   width: 25px;
 }
 
+#trending-title {
+  display: flex;
+  align-items: center;
+}
+
 h4 {
   display: inline;
-  vertical-align: super;
   font-size: 0.7rem;
   text-transform: uppercase;
+  font-weight: 600;
 }
 
 ol li {
@@ -132,6 +178,10 @@ h3 {
   font-size: 0.7rem;
 }
 
+.date .star {
+  display: none;
+}
+
 hr {
   border-top: 1px solid #f0f1f1;
   margin: 2rem 0;
@@ -152,6 +202,12 @@ hr {
   border: 1px solid #d5d5d5;
   color: #a49a97;
   padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.button:active {
+  position: relative;
+  top: 3px;
 }
 
 #discover div {
@@ -231,6 +287,10 @@ h2 {
   right: 0;
   bottom: 0;
   width: 20px;
+}
+
+.bookmark:hover {
+  cursor: pointer;
 }
 
 .article-img {
