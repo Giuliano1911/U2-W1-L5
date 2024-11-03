@@ -1,20 +1,14 @@
-const nav = document.getElementById('nav')
+const navbar = document.getElementById('nav')
+const header = document.getElementById('title')
 
-window.addEventListener('scroll', function (e) {
-  if (
-    document.documentElement.scrollTop ||
-    document.body.scrollTop > window.innerHeight
-  ) {
-    nav.classList.add('white-nav')
-    nav.classList.remove('yellow-nav')
+window.addEventListener('scroll', function () {
+  const headerHeigth = header.offsetHeight - 150
+  if (scrollY > headerHeigth) {
+    navbar.classList.add('white-nav')
   } else {
-    nav.classList.add('yellow-nav')
-    nav.classList.remove('white-nav')
+    navbar.classList.remove('white-nav')
   }
 })
-
-//Appena la pagina scrolla la navbar prende la classe white-nav, appena torna in alto la nav prende la classe yellow-nav
-//Non ho scelto una precisa lunghezza in pixel (grandezza header[nav + #title]) perchè dalla foto data si vedeva ancora un po' di header e la nav era già bianca
 
 const allM = document.querySelectorAll('[stroke-linecap="butt"]')
 //prendendo getElementsByTagName('g') ogni tanto scomparivano tutte in una volta
